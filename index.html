@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- The public download page for Civilian Protocol. Its source is tools/release/downloads/ in the game's own
+     repository; tools/release/publish.sh copies it to the public downloads repository, which GitHub Pages serves.
+     The buttons always fetch the newest release, so this page changes only when its words do. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Civilian Protocol: download the playtest</title>
+<meta name="description" content="Download the Civilian Protocol playtest for Windows, Mac and Linux. An extraction survival game about getting home, and who is waiting there.">
+<link rel="icon" href="icon.png">
+<style>
+  :root { --ink: #f3ead8; --soft: #b9b3a3; --night: #0a0f14; --panel: #121a21; --line: #26323b; --sun: #f0a13c; --sea: #3fb7b0; --coral: #ef7f62; }
+  * { box-sizing: border-box; }
+  html { background: var(--night); color: var(--ink); font: 18px/1.6 Georgia, "Iowan Old Style", "Times New Roman", serif; }
+  body { margin: 0; }
+  a { color: var(--sea); }
+  a:focus-visible, .get:focus-visible { outline: 3px solid var(--sun); outline-offset: 3px; }
+  .hero { position: relative; min-height: min(72vh, 640px); display: flex; align-items: flex-end; overflow: hidden; border-bottom: 1px solid var(--line); }
+  .hero img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 78% 40%; image-rendering: pixelated; }
+  .hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(10,15,20,.94) 0%, rgba(10,15,20,.72) 42%, rgba(10,15,20,0) 78%), linear-gradient(0deg, rgba(10,15,20,.9) 0%, rgba(10,15,20,0) 38%); }
+  .hero .words { position: relative; z-index: 1; padding: clamp(20px, 5vw, 64px); max-width: 720px; }
+  .kicker { font: 600 13px/1 ui-monospace, "SF Mono", Menlo, Consolas, monospace; letter-spacing: .22em; text-transform: uppercase; color: var(--sun); margin: 0 0 14px; }
+  h1 { font: 700 clamp(40px, 8vw, 84px)/.95 Georgia, "Iowan Old Style", serif; letter-spacing: -.01em; margin: 0 0 18px; text-wrap: balance; }
+  .hero p.tag { font-size: clamp(18px, 2.2vw, 22px); color: var(--ink); margin: 0; max-width: 34ch; text-wrap: pretty; }
+  main { max-width: 980px; margin: 0 auto; padding: clamp(24px, 5vw, 56px) clamp(18px, 4vw, 40px) 80px; }
+  h2 { font: 700 28px/1.2 Georgia, serif; margin: 2.2em 0 .6em; }
+  .version { font: 14px/1.4 ui-monospace, "SF Mono", Menlo, Consolas, monospace; color: var(--soft); margin: 0 0 18px; }
+  .gets { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; }
+  .get { display: block; text-decoration: none; color: var(--night); background: var(--sun); border-radius: 6px; padding: 18px 20px; transition: transform .12s ease, background .12s ease; }
+  .get:hover { background: #ffb654; transform: translateY(-2px); }
+  .get.alt { background: var(--panel); color: var(--ink); border: 1px solid var(--line); }
+  .get.alt:hover { background: #18232c; }
+  .get strong { display: block; font: 700 22px/1.2 Georgia, serif; }
+  .get span { font: 13px/1.4 ui-monospace, "SF Mono", Menlo, Consolas, monospace; opacity: .8; }
+  .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; padding: 0; margin: 0; list-style: none; }
+  .steps li { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 18px 20px; }
+  .steps h3 { font: 600 13px/1 ui-monospace, "SF Mono", Menlo, Consolas, monospace; letter-spacing: .18em; text-transform: uppercase; color: var(--sea); margin: 0 0 10px; }
+  .steps p { margin: 0; font-size: 16px; color: var(--ink); }
+  p, li { max-width: 68ch; }
+  ul.plain { padding-left: 1.1em; }
+  footer { border-top: 1px solid var(--line); color: var(--soft); font-size: 15px; padding: 24px clamp(18px, 4vw, 40px) 48px; max-width: 980px; margin: 0 auto; }
+  @media (prefers-reduced-motion: reduce) { .get { transition: none; } .get:hover { transform: none; } }
+</style>
+</head>
+<body>
+<header class="hero">
+  <img src="title.png" alt="A man with a shotgun stands on a marina dock at dusk, fishing boats and palms behind him.">
+  <div class="words">
+    <p class="kicker">Playtest build</p>
+    <h1>Civilian Protocol</h1>
+    <p class="tag">An extraction survival game about getting home, and who is waiting there.</p>
+  </div>
+</header>
+<main>
+  <h2 id="download">Download</h2>
+  <p class="version" id="version">The newest playtest build.</p>
+  <div class="gets">
+    <a class="get" href="https://github.com/TreyBros/civilian-protocol-downloads/releases/latest/download/CivilianProtocol-windows.zip"><strong>Windows</strong><span>CivilianProtocol-windows.zip, about 130 MB</span></a>
+    <a class="get" href="https://github.com/TreyBros/civilian-protocol-downloads/releases/latest/download/CivilianProtocol-mac.zip"><strong>Mac</strong><span>CivilianProtocol-mac.zip, about 150 MB</span></a>
+    <a class="get alt" href="https://github.com/TreyBros/civilian-protocol-downloads/releases/latest/download/CivilianProtocol-linux.zip"><strong>Linux</strong><span>CivilianProtocol-linux.zip, about 120 MB</span></a>
+  </div>
+
+  <h2>Start it</h2>
+  <ul class="steps">
+    <li><h3>Windows</h3><p>Unzip the whole folder and run CivilianProtocol.exe. If a blue "Windows protected your PC" box appears, click More info, then Run anyway. You see it because the build isn't signed yet.</p></li>
+    <li><h3>Mac</h3><p>Unzip it and move Civilian Protocol to Applications. The first time, right-click the app, choose Open, then Open again. If your Mac still refuses, allow it under System Settings, Privacy &amp; Security.</p></li>
+    <li><h3>Linux</h3><p>Unzip it, then run CivilianProtocol.x86_64.</p></li>
+  </ul>
+
+  <h2>What it is</h2>
+  <p>You live on a street in the Florida Keys, two years after an eleven-day war nobody can explain. You take a boat out to islands that were left behind, find what you can, and try to get home with it. What you bring back builds your house, feeds the people in it and makes you better at the things you do.</p>
+  <ul class="plain">
+    <li>Play alone, or meet other players on Wreckers' Key and go out as a squad of up to four.</li>
+    <li>This is an early build. Things will break. The Report a problem button on the title screen makes one file you can send back.</li>
+    <li>Everyone playing together needs the same version. It is on the title screen. READ-ME-FIRST in the zip has the rest.</li>
+  </ul>
+</main>
+<footer>Civilian Protocol is made by RootBros Gaming. Older builds are on the <a href="https://github.com/TreyBros/civilian-protocol-downloads/releases">releases page</a>.</footer>
+<script>
+  // Says which version the buttons fetch. If GitHub cannot be asked, the line stays as it is and the buttons still work.
+  fetch('https://api.github.com/repos/TreyBros/civilian-protocol-downloads/releases/latest')
+    .then((r) => (r.ok ? r.json() : null))
+    .then((rel) => {
+      if (!rel || !rel.tag_name) return
+      const day = new Date(rel.published_at).toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' })
+      document.getElementById('version').textContent = `Version ${rel.tag_name.replace(/^v/, '')}, ${day}.`
+    })
+    .catch(() => {})
+</script>
+</body>
+</html>
