@@ -1,6 +1,6 @@
 # Civilian Protocol: downloads
 
-Playtest builds of Civilian Protocol, an extraction survival game about getting home, and who is waiting there. Made by RootBros Gaming.
+Playtest builds of Civilian Protocol, an extraction survival game. Raid the Keys. Grab what you can. Get home alive. Made by RootBros Gaming.
 
 **[Open the download page](https://treybros.github.io/civilian-protocol-downloads/)**, or take the newest build directly:
 

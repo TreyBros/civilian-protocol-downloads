@@ -1,1 +1,1 @@
-{"version": "0.8.8", "protocol": 51}
+{"version": "0.8.9", "protocol": 51, "files": {"mac": {"sha256": "25dba73c3bf231f93f42501ff71196d19a9eb930fc9dcb2bb71a2a0c946d16a6", "size": 231309031}, "windows": {"sha256": "2411611813afceee2abba0d57ccec16db4721a72fb414b0059f0a3297c838748", "size": 208681956}, "linux": {"sha256": "f1d03b913be7424f4a4c9d77b4bc2ff8aedf539d9fde87d31bc74159c3f35c2f", "size": 199033675}}}
